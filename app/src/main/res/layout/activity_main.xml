@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cornerRadius="9dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="end"
+                android:id="@+id/Menu"
+                android:backgroundTint="@color/white"
+                android:text="a"
+                android:foreground="@drawable/menu_icon"
+                android:layout_marginEnd="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:text="Notes"
+               />
+
+            <SearchView
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/background_grey"
+                app:cornerRadius="30dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardLayout"
+            android:layout_marginLeft="-10dp"
+            android:orientation="vertical">
+
+        </GridLayout>
+
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/baseline_add_circle_24"
+        android:contentDescription="Add Button"
+        />
+
+</RelativeLayout>
